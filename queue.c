@@ -88,7 +88,11 @@ bool isEmptyQueue(Queue *q){
     return q->ll.head == NULL;
 }
 
-int peek
+int peek(Queue *q){
+    if(q->ll.head != NULL){
+        return q->ll.head->data;
+    }
+}
 
 int main(){
     int n;

@@ -115,6 +115,7 @@ int main(){
     ll.head = NULL;
     ll.tail = NULL;
     do{
+        system("clear");
         system("cls");
         menu();
         scanf("%d", &lc);

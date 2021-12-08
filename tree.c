@@ -15,7 +15,7 @@ BTNode *insertBTNode(BTNode *root, int data){
 		newNode->right = NULL;
 		return newNode;
 	}
-	if(data <= root->data){
+	if(data < root->data){
 		root->left = insertBTNode(root->left, data);
 	}
 	else if(data > root->data){

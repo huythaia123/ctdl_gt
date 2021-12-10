@@ -46,13 +46,31 @@ bool searchBTNode(BTNode *root, int data){
     }
 }
 
-void preOrder(BTNode *root){
-    if(root != NULL){
-        printf("%d, ", root->data);
-        preOrder(root->left);
-        preOrder(root->right);
-    }
-}
+// int searchBTNode(BTNode *root, int data){
+//     BTNode *cur = root;
+//     if(root == NULL){
+//         return 0;
+//     }
+//     while(cur != NULL){
+//         if(data == cur->data){
+//             return cur->data;
+//         }
+//         else if(data < cur->data){
+//             cur = cur->left;
+//         }
+//         else if(data > cur->data){
+//             cur = cur->right;
+//         }
+//     }
+// }
+
+// void preOrder(BTNode *root){
+//     if(root != NULL){
+//         printf("%d, ", root->data);
+//         preOrder(root->left);
+//         preOrder(root->right);
+//     }
+// }
 
 int main(){
     int n;
@@ -67,6 +85,7 @@ int main(){
         scanf("%d", &data);
         root = insertBTNode(root, data);
     }
+    preOrder(root);
     printf("- Nhap vao gia tri tim: ");
     scanf("%d", &data);
     if(searchBTNode(root, data)){

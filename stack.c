@@ -127,6 +127,14 @@ int main(){
         push(s, data);
     }
 
+    printf("- Thuc hien isEmptyStack.\n");
+    if(isEmptyStack(s)){
+        printf("\t+ Ngan xep rong.\n");
+    }
+    else{
+        printf("\t+ Ngan xep khong rong.\n");
+    }
+
     printf("\n- Thuc hien peek.\n");
     printf("\t+ In ra gia tri dau ngan xep: %d\n\n", peek(s));
 
